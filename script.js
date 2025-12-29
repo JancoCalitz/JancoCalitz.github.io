@@ -21,7 +21,7 @@ setInterval(() => {
    - 10 seconds per image
    - Soft cross-fade via CSS class
 */
-const ROTATE_EVERY_MS = 5000;
+const ROTATE_EVERY_MS = 8000;
 const FADE_MS = 800; // must match CSS transition (0.8s)
 
 const galleries = [
