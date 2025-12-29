@@ -1,1 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 400;
+}
+
+.hero {
+  height: 100vh;
+  background: url("https://picsum.photos/1600/900") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.4);
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.light {
+  background: #f7f5f2;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 280px;
+  border-radius: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+button {
+  background: #b89b6a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+iframe {
+  width: 90%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 40px;
+  background: #eee;
+  text-align: center;
+}
