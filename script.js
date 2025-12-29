@@ -27,11 +27,11 @@ const FADE_MS = 800; // must match CSS transition (0.8s)
 const galleries = [
   {
     el: document.getElementById("gallery1"),
-    images: ["IMG_8714.jpg", "IMG_8717.jpg"]
+    images: ["block1.jpg", "1block4.jpg"]
   },
   {
     el: document.getElementById("gallery2"),
-    images: ["IMG_8715.jpg", "IMG_8718.jpg"]
+    images: ["2block1.jpg", "2block3.jpg"]
   },
   {
     el: document.getElementById("gallery3"),
