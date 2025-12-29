@@ -67,7 +67,7 @@ nav a:hover {
 .hero {
   height: 100vh;
   /* CHANGED: static hero image */
-  background: url("IMG_8713.jpg") center/cover no-repeat;
+  background: url("cover1.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
