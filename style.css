@@ -66,7 +66,8 @@ nav a:hover {
 /* ===== Hero ===== */
 .hero {
   height: 100vh;
-  background: url("https://picsum.photos/1600/900") center/cover;
+  /* CHANGED: static hero image */
+  background: url("IMG_8713.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,11 +147,29 @@ nav a:hover {
   margin-top: 40px;
 }
 
-.gallery img {
+/* NEW: tile wrapper for consistent crop + smooth fade */
+.gallery-tile {
   width: 280px;
+  height: 210px;            /* keeps tiles uniform */
+  overflow: hidden;
   border-radius: 12px;
   border: 1px solid rgba(63, 78, 64, 0.18);
   box-shadow: 0 8px 18px rgba(34, 48, 41, 0.12);
+  background: rgba(244, 247, 243, 0.6);
+}
+
+.gallery-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.8s ease;
+  opacity: 1;
+}
+
+/* NEW: class used by JS during swap */
+.gallery-tile img.is-fading {
+  opacity: 0;
 }
 
 /* ===== Form ===== */
