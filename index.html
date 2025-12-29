@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="af">
 <head>
   <meta charset="UTF-8">
-  <title>Wedding Invitation</title>
+  <title>Trou-uitnodiging</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
@@ -11,60 +11,90 @@
 <body>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#details">Details</a>
+  <a href="#home">Tuis</a>
+  <a href="#details">Inligting</a>
   <a href="#rsvp">RSVP</a>
-  <a href="#location">Location</a>
+  <a href="#location">Ligging</a>
 </nav>
 
 <section id="home" class="hero">
   <div class="overlay">
     <h1>Marné & Dirko</h1>
-    <p>are getting married</p>
+    <p>trou binnekort</p>
     <div id="countdown"></div>
   </div>
 </section>
 
 <section id="details" class="section">
-  <h2>Wedding Details</h2>
-  <p><strong>Date:</strong> 1 August 2026</p>
-  <p><strong>Time:</strong> 14:00</p>
+  <h2>Trou-inligting</h2>
+
+  <p><strong>Datum:</strong> 1 Augustus 2026</p>
+  <p><strong>Tyd:</strong> 14:00</p>
   <p><strong>Venue:</strong> Green Leaves Country Lodge & Venue, Hartbeespoort Dam</p>
-  <p><strong>Accommodation:</strong> <a href="./Accommodation 2025-26.pdf" target="_blank" rel="noopener">Download</a></p>
+
+  <p>
+    <strong>Akkommodasie:</strong>
+    Ons venue bied ’n beperkte aantal slaapplekke aan vir gaste wat graag op die terrein wil oornag.
+    Dit werk op ’n first come, first serve basis, en alle reëlings moet direk met die venue gemaak word.
+    Vir ander opsies is daar ook verskeie gastehuise in die omgewing — bespreek asseblief vroegtydig.
+    <br>
+    <a href="accommodation-2025-26.pdf" target="_blank" rel="noopener">Laai akkommodasie-inligting (PDF) af</a>
+  </p>
+
+  <p>
+    <strong>Kleredrag en kleurskema:</strong>
+    Semiformeel. Ons wil graag hê dat ons troufoto’s ’n pragtige, samehangende gevoel het wat die styl van ons dag weerspieël.
+    Indien moontlik, kies asseblief klere wat by ons kleurskema pas. Dit is net ’n voorstel — julle gemak en persoonlike styl is vir ons die belangrikste!
+  </p>
+
+  <p>
+    <strong>Geskenke:</strong>
+    Julle teenwoordigheid is ons grootste geskenk. Ons verwag glad nie geskenke nie.
+    Indien julle egter sou wou bydra tot ons nuwe reis saam, sal ’n geldelike geskenk vir ons prakties en waardevol wees (heeltemal opsioneel).
+  </p>
+
+  <p><strong>Trourekening (opsioneel):</strong></p>
+  <p style="margin-top: -10px;">
+    Bank: FNB/RMB<br>
+    Rekeninghouer: Dirk Calitz<br>
+    Rekeningtipe: Spaarrekening<br>
+    Rekeningnommer: 63179759825<br>
+    Tak-kode: 250655
+  </p>
 
   <!-- Rotating gallery (3 tiles) -->
   <div class="gallery">
     <div class="gallery-tile">
-      <img id="gallery1" src="IMG_8714.jpg" alt="Wedding photo 1">
+      <img id="gallery1" src="block1.JPG" alt="Voorbeeld kleredrag: dames">
     </div>
 
     <div class="gallery-tile">
-      <img id="gallery2" src="IMG_8715.jpg" alt="Wedding photo 2">
+      <img id="gallery2" src="2block1.JPG" alt="Voorbeeld kleredrag: mans">
     </div>
 
     <div class="gallery-tile">
-      <img id="gallery3" src="IMG_8716.jpg" alt="Wedding photo 3">
+      <img id="gallery3" src="3block2.JPG" alt="Kleurskema / inspirasie">
     </div>
   </div>
 </section>
 
 <section id="rsvp" class="section light">
   <h2>RSVP</h2>
-  <p>Please respond by <strong>1 February 2026</strong></p>
+  <p>Laat weet asseblief teen <strong>1 April 2026</strong></p>
 
   <form action="https://formspree.io/f/mjgvpazl" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="name" placeholder="Volle naam" required>
     <select name="attendance" required>
-      <option value="">Will you attend?</option>
-      <option value="Yes">Joyfully Accept</option>
-      <option value="No">Regretfully Decline</option>
+      <option value="">Sal jy dit bywoon?</option>
+      <option value="Yes">Ja, ek sal graag kom</option>
+      <option value="No">Nee, ek kan ongelukkig nie</option>
     </select>
-    <button type="submit">Submit</button>
+    <button type="submit">Stuur</button>
   </form>
 </section>
 
 <section id="location" class="section">
-  <h2>Location</h2>
+  <h2>Ligging</h2>
   <iframe
     src="https://www.google.com/maps?q=Green+Leaves+Country+Lodge+%26+Venue,+Hartbeespoort&output=embed"
     width="100%"
@@ -76,7 +106,7 @@
 </section>
 
 <footer>
-  <p>We can’t wait to celebrate with you 🤍</p>
+  <p>Ons sien vreeslik uit om saam met julle te vier 🤍</p>
 </footer>
 
 <script src="script.js"></script>
