@@ -232,6 +232,76 @@ iframe {
   border: 1px solid rgba(63, 78, 64, 0.18);
 }
 
+/* ===== Content width (prevents long lines and cramped look) ===== */
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* ===== Download link line ===== */
+.download-line {
+  margin-top: 18px;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(63, 78, 64, 0.22);
+  text-decoration: none;
+  color: var(--forest);
+  background: rgba(244, 247, 243, 0.75);
+}
+
+.download-link:hover {
+  border-color: rgba(52, 76, 61, 0.55);
+}
+
+/* ===== Theme grid ===== */
+.theme-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.theme-card {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(63, 78, 64, 0.18);
+  box-shadow: 0 10px 22px rgba(34, 48, 41, 0.10);
+  background: rgba(244, 247, 243, 0.55);
+}
+
+.theme-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Gift/bank info block ===== */
+.gift-box {
+  margin-top: 34px;
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(63, 78, 64, 0.18);
+  background: rgba(244, 247, 243, 0.70);
+  text-align: left;
+}
+
+.gift-box h3 {
+  margin-top: 0;
+  color: var(--forest);
+  font-family: 'Playfair Display', serif;
+}
+
+.bank-details p {
+  margin: 6px 0;
+}
+
+
 /* ===== Footer ===== */
 footer {
   padding: 40px;
