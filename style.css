@@ -384,32 +384,6 @@ footer p {
 }
 
 
-/* ✅ REPLACE your current nav mobile block with this */
-@media (max-width: 700px) {
-  nav{
-    justify-content: flex-start;
-    gap: 18px;
-    padding: 10px 12px;
-
-    /* makes it scroll sideways instead of wrapping/cutting */
-    overflow-x: auto;
-    white-space: nowrap;
-
-    /* nicer scrolling on iPhone */
-    -webkit-overflow-scrolling: touch;
-  }
-
-  nav a{
-    display: inline-block;
-    font-size: 0.95rem;
-    padding: 6px 2px;
-    flex: 0 0 auto; /* prevents shrinking */
-  }
-
-  /* optional: hide the scrollbar for a cleaner look */
-  nav::-webkit-scrollbar{
-    display: none;
-  }
-}
+@media (max-width: 700px) { nav{ flex-wrap: wrap; gap: 14px; padding: 10px 12px; } nav a{ font-size: 0.95rem; } }
 
 
