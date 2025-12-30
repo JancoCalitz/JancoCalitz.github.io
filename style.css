@@ -138,11 +138,11 @@ nav a:hover {
 
 /* ===== ONLY change Details + Location sections (explicit, in case you later alter defaults) ===== */
 #details.section{
-  background: var(--sage-hint);
+  background: var(--sage-soft);
 }
 
 #location.section {
-  background: var(--sage-soft);
+  background: var(--sage-hint);
 }
 
 /* ===== Gallery ===== */
