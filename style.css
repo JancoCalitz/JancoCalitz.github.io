@@ -359,8 +359,24 @@ footer p {
 }
 
 
+/* ✅ REPLACE your current hero mobile block with this */
 @media (max-width: 700px) {
-  .overlay {
+  .hero{
+    /* keep it full-screen and not letterboxed */
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* adjust this value until the couple is centred nicely */
+    background-position: 65% center;
+
+    /* centre the overlay card on mobile */
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .overlay{
     width: 100%;
     max-width: 520px;
     padding: 34px 22px;
@@ -368,24 +384,32 @@ footer p {
 }
 
 
-@media (max-width: 700px) {
-  .hero{
-    background-size: contain;     /* shows whole photo */
-    background-position: 70% center;  /* centre it */
-    background-repeat: no-repeat;
-    background-color: #000;       /* optional: fills any empty space */
-  }
-}
-
+/* ✅ REPLACE your current nav mobile block with this */
 @media (max-width: 700px) {
   nav{
-    flex-wrap: wrap;
-    gap: 14px;
+    justify-content: flex-start;
+    gap: 18px;
     padding: 10px 12px;
+
+    /* makes it scroll sideways instead of wrapping/cutting */
+    overflow-x: auto;
+    white-space: nowrap;
+
+    /* nicer scrolling on iPhone */
+    -webkit-overflow-scrolling: touch;
   }
 
   nav a{
+    display: inline-block;
     font-size: 0.95rem;
+    padding: 6px 2px;
+    flex: 0 0 auto; /* prevents shrinking */
+  }
+
+  /* optional: hide the scrollbar for a cleaner look */
+  nav::-webkit-scrollbar{
+    display: none;
   }
 }
+
 
