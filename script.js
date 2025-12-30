@@ -10,9 +10,9 @@ setInterval(() => {
   const minutes = Math.floor((diff / (1000 * 60)) % 60);
 
   countdown.innerHTML = `
-    <strong>${days}</strong> days
-    <strong>${hours}</strong> hours
-    <strong>${minutes}</strong> minutes
+    <strong>${dae}</strong> days
+    <strong>${ure}</strong> hours
+    <strong>${minute}</strong> minutes
   `;
 }, 1000);
 
