@@ -368,7 +368,7 @@ footer p {
     background-repeat: no-repeat;
 
     /* adjust this value until the couple is centred nicely */
-    background-position: 65% center;
+    background-position: 75% center;
 
     /* centre the overlay card on mobile */
     justify-content: center;
