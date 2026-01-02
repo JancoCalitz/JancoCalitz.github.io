@@ -187,6 +187,22 @@ nav a:hover {
   opacity: 0;
 }
 
+
+/* ===== Single theme image ===== */
+.theme-single {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-single img {
+  max-width: 520px;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(63, 78, 64, 0.18);
+  box-shadow: 0 12px 26px rgba(34, 48, 41, 0.14);
+}
+
 /* ===== Form ===== */
 form {
   max-width: 400px;
